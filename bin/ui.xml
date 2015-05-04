@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="542,287" sizebox="4,4,4,4" caption="0,0,0,30" mininfo="542,287">
+    <Font name="Arial" size="14" bold="false" italic="false" />
+    <Font name="宋体" size="12" bold="true" italic="false" />
+    <Font name="宋体" size="14" bold="false" italic="false" />
+    <Font name="Arial" size="22" bold="false" italic="false" />
+    <Font name="黑体" size="14" bold="false" italic="false" />
+    <Font name="黑体" size="16" bold="false" italic="false" />
+    <VerticalLayout width="542" height="257" bkcolor="#FF52B3F2" bkcolor2="#FF52B3F2">
+        <HorizontalLayout width="550" height="32" bkimage="file=&apos;skin\SysBtn\bg.png&apos; source=&apos;0,0,542,30&apos;" bkcolor="#FF52B3F2" bkcolor2="#FF52B3F2">
+            <VerticalLayout width="510" height="32" bkimage="file=&apos;skin\SysBtn\bg.png&apos; source=&apos;0,0,510,30&apos;" />
+            <VerticalLayout width="512" height="32" bkimage="file=&apos;skin\SysBtn\bg.png&apos; source=&apos;510,0,30,30&apos;">
+                <Button name="restorebtn" tooltip="还原" visible="false" float="true" pos="22,5,0,0" width="23" height="19" align="center" normalimage=" file=&apos;skin\SysBtn\StoreNormal.bmp&apos; " hotimage=" file=&apos;skin\SysBtn\StoreFocus.bmp&apos; " pushedimage=" file=&apos;skin\SysBtn\StoreFocus.bmp&apos; " />
+                <Button name="closebtn" tooltip="关闭" float="true" pos="8,9,0,0" width="16" height="16" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;skin\SysBtn\BtnCloseNormal.png&apos; source=&apos;0,0,16,16&apos;" hotimage="file=&apos;skin\SysBtn\BtnCloseFocus.png&apos; source=&apos;0,0,16,16&apos;" pushedimage="file=&apos;skin\SysBtn\BtnCloseFocus.png&apos; source=&apos;0,0,16,16&apos;" />
+            </VerticalLayout>
+        </HorizontalLayout>
+        <HorizontalLayout width="542" height="257" bkimage="file=&apos;skin\SysBtn\bg.png&apos; source=&apos;0,29,542,287&apos;">
+            <Text name="City" text="中国深圳" float="true" pos="35,9,0,0" width="87" height="32" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="5" align="wrap" />
+            <Text name="Weather" text="小雨转雷阵雨" float="true" pos="24,180,0,0" width="164" height="16" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="2" align="centerwrap" />
+            <Control name="WeatherPic" float="true" pos="72,55,0,0" width="70" height="70" />
+            <Label name="temp" text="-11℃~-11℃" float="true" pos="13,138,0,0" width="186" height="34" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="3" align="center" />
+            <Text name="Wind" text="微风" float="true" pos="25,207,0,0" width="164" height="16" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="2" align="centerwrap" />
+            <Text name="date" text="周一 " float="true" pos="23,46,0,0" width="50" height="16" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="4" align="wrap" />
+            <Control name="WeatherPic1" float="true" pos="236,82,0,0" width="50" height="50" />
+            <Control name="WeatherPic3" float="true" pos="456,82,0,0" width="50" height="50" />
+            <Control name="WeatherPic2" float="true" pos="344,81,0,0" width="50" height="50" />
+            <Text name="temp1" text="-11℃~-11℃" float="true" pos="220,155,0,0" width="78" height="16" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="centerwrap" />
+            <Text name="Weather1" text="小雨转雷阵雨" float="true" pos="213,189,0,0" width="90" height="16" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="2" align="centerwrap" />
+            <Text name="Wind1" text="微风" float="true" pos="215,223,0,0" width="90" height="16" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="2" align="centerwrap" />
+            <Text name="pm25" text="pm25：90" float="true" pos="94,230,0,0" width="92" height="16" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="2" align="centerwrap" />
+            <Text name="date1" text="周二" float="true" pos="235,46,0,0" width="50" height="16" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="4" align="centerwrap" />
+            <Text name="date2" text="周三" float="true" pos="344,47,0,0" width="50" height="16" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="4" align="centerwrap" />
+            <Text name="date3" text="周四" float="true" pos="456,47,0,0" width="50" height="16" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="4" align="centerwrap" />
+            <Text name="temp2" text="-11℃~-11℃" float="true" pos="330,156,0,0" width="78" height="16" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="centerwrap" />
+            <Text name="Weather2" text="小雨转雷阵雨" float="true" pos="323,189,0,0" width="90" height="16" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="2" align="centerwrap" />
+            <Text name="Weather3" text="小雨转雷阵雨" float="true" pos="434,189,0,0" width="90" height="16" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="2" align="centerwrap" />
+            <Text name="temp3" text="-11℃~-11℃" float="true" pos="441,156,0,0" width="78" height="16" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="centerwrap" />
+            <Text name="Wind2" text="微风" float="true" pos="324,222,0,0" width="90" height="16" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="2" align="centerwrap" />
+            <Text name="Wind3" text="微风" float="true" pos="436,223,0,0" width="90" height="14" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="2" align="centerwrap" />
+            <Text text="天气质量：" float="true" pos="25,231,0,0" width="75" height="17" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="2" align="wrap" />
+            <Button float="true" pos="15,6,0,0" width="20" height="20" bkimage="skin\SysBtn\position.png" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+            <Text name="curtemp" text="周一 11月24日 (实时：4℃)" float="true" pos="129,10,0,0" width="300" height="16" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="5" align="wrap" />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

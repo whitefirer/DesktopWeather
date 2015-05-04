@@ -1,0 +1,110 @@
+﻿生成启动时间为 2014/11/23 19:20:19。
+     1>项目“C:\Users\xiaobai\Downloads\curl-7.28.1\src\vc6curlsrc.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“.\DLL-Debug\curlsrc.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\lib /I..\include /I. /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\DLL-Debug\\" /Fd".\DLL-Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt hugehelp.c ..\lib\nonblock.c ..\lib\rawstr.c ..\lib\strtoofft.c tool_binmode.c tool_bname.c tool_cb_dbg.c tool_cb_hdr.c tool_cb_prg.c tool_cb_rea.c tool_cb_see.c tool_cb_wrt.c tool_cfgable.c tool_convert.c tool_dirhie.c tool_doswin.c tool_easysrc.c tool_formparse.c tool_getparam.c tool_getpass.c tool_help.c tool_helpers.c tool_homedir.c tool_libinfo.c tool_main.c tool_metalink.c tool_mfiles.c tool_msgs.c tool_operate.c tool_operhlp.c tool_panykey.c tool_paramhlp.c tool_parsecfg.c tool_setopt.c tool_sleep.c tool_urlglob.c tool_util.c tool_vms.c tool_writeenv.c tool_writeout.c tool_xattr.c
+         tool_xattr.c
+         tool_writeout.c
+         tool_writeenv.c
+         tool_vms.c
+         tool_util.c
+         tool_urlglob.c
+         tool_sleep.c
+         tool_setopt.c
+         tool_parsecfg.c
+         tool_paramhlp.c
+         tool_panykey.c
+         tool_operhlp.c
+         tool_operate.c
+         tool_msgs.c
+         tool_mfiles.c
+         tool_metalink.c
+         tool_main.c
+         tool_libinfo.c
+         tool_homedir.c
+         tool_helpers.c
+         正在生成代码...
+         正在编译...
+         tool_help.c
+         tool_getpass.c
+         tool_getparam.c
+         tool_formparse.c
+         tool_easysrc.c
+         tool_doswin.c
+         tool_dirhie.c
+         tool_convert.c
+         tool_cfgable.c
+         tool_cb_wrt.c
+         tool_cb_see.c
+         tool_cb_rea.c
+         tool_cb_prg.c
+         tool_cb_hdr.c
+         tool_cb_dbg.c
+         tool_bname.c
+         tool_binmode.c
+         strtoofft.c
+         rawstr.c
+         nonblock.c
+         正在生成代码...
+         正在编译...
+         hugehelp.c
+         正在生成代码...
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _VC80_UPGRADE=0x0600 /l"0x0409" /I..\include /nologo /fo".\DLL-Debug\curl.res" curl.rc 
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\xiaobai\Downloads\curl-7.28.1\src\.\DLL-Debug\curlsrc.exe) 与 Linker 的 OutputFile 属性值(C:\Users\xiaobai\Downloads\curl-7.28.1\src\DLL-Debug\curl.exe)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Link.OutputFile) 中指定的值匹配。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(curlsrc) 与 Linker 的 OutputFile 属性值(curl)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Link.OutputFile) 中指定的值匹配。
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"DLL-Debug/curl.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"..\lib\DLL-Debug" libcurld_imp.lib ws2_32.lib wldap32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\DLL-Debug\curlsrc.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\xiaobai\Downloads\curl-7.28.1\src\DLL-Debug\curlsrc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\DLL-Debug\curlsrc.lib" /MACHINE:X86 ".\DLL-Debug\curl.res"
+         ".\DLL-Debug\hugehelp.obj"
+         ".\DLL-Debug\nonblock.obj"
+         ".\DLL-Debug\rawstr.obj"
+         ".\DLL-Debug\strtoofft.obj"
+         ".\DLL-Debug\tool_binmode.obj"
+         ".\DLL-Debug\tool_bname.obj"
+         ".\DLL-Debug\tool_cb_dbg.obj"
+         ".\DLL-Debug\tool_cb_hdr.obj"
+         ".\DLL-Debug\tool_cb_prg.obj"
+         ".\DLL-Debug\tool_cb_rea.obj"
+         ".\DLL-Debug\tool_cb_see.obj"
+         ".\DLL-Debug\tool_cb_wrt.obj"
+         ".\DLL-Debug\tool_cfgable.obj"
+         ".\DLL-Debug\tool_convert.obj"
+         ".\DLL-Debug\tool_dirhie.obj"
+         ".\DLL-Debug\tool_doswin.obj"
+         ".\DLL-Debug\tool_easysrc.obj"
+         ".\DLL-Debug\tool_formparse.obj"
+         ".\DLL-Debug\tool_getparam.obj"
+         ".\DLL-Debug\tool_getpass.obj"
+         ".\DLL-Debug\tool_help.obj"
+         ".\DLL-Debug\tool_helpers.obj"
+         ".\DLL-Debug\tool_homedir.obj"
+         ".\DLL-Debug\tool_libinfo.obj"
+         ".\DLL-Debug\tool_main.obj"
+         ".\DLL-Debug\tool_metalink.obj"
+         ".\DLL-Debug\tool_mfiles.obj"
+         ".\DLL-Debug\tool_msgs.obj"
+         ".\DLL-Debug\tool_operate.obj"
+         ".\DLL-Debug\tool_operhlp.obj"
+         ".\DLL-Debug\tool_panykey.obj"
+         ".\DLL-Debug\tool_paramhlp.obj"
+         ".\DLL-Debug\tool_parsecfg.obj"
+         ".\DLL-Debug\tool_setopt.obj"
+         ".\DLL-Debug\tool_sleep.obj"
+         ".\DLL-Debug\tool_urlglob.obj"
+         ".\DLL-Debug\tool_util.obj"
+         ".\DLL-Debug\tool_vms.obj"
+         ".\DLL-Debug\tool_writeenv.obj"
+         ".\DLL-Debug\tool_writeout.obj"
+         ".\DLL-Debug\tool_xattr.obj"
+         vc6curlsrc.vcxproj -> C:\Users\xiaobai\Downloads\curl-7.28.1\src\.\DLL-Debug\curlsrc.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"DLL-Debug/curl.exe;#1" /manifest ".\DLL-Debug\curlsrc.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         正在删除文件“.\DLL-Debug\curlsrc.unsuccessfulbuild”。
+         正在对“.\DLL-Debug\curlsrc.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Users\xiaobai\Downloads\curl-7.28.1\src\vc6curlsrc.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:06.79
