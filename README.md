@@ -7,3 +7,5 @@ duilib+jsoncpp+百度LBS API+curl实现的桌面天气
 
 
 百度LBS API： [http://developer.baidu.com/map/wiki/index.php?title=car/api/weather](http://developer.baidu.com/map/wiki/index.php?title=car/api/weather)
+
+编译后将bin目录下的skin.zip,libcurl.dll,DesktopWeather.exe放一起就行。
