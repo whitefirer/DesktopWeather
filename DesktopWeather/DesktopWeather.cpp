@@ -10,18 +10,18 @@ using namespace std;
 #include<iostream>
 
 #ifdef _DEBUG
-#   ifdef _UNICODE
-#       pragma comment(lib, "DuiLib_ud.lib")
-#   else
-#       pragma comment(lib, "DuiLib_d.lib")
-#   endif
+#	ifdef _UNICODE
+#		pragma comment(lib, "DuiLib_ud.lib")
+#	else
+#		pragma comment(lib, "DuiLib_d.lib")
+#	endif
 #pragma comment(lib, "lib_json_d.lib")
 #else
-#   ifdef _UNICODE
-#       pragma comment(lib, "DuiLib_u.lib")
-#   else
-#       pragma comment(lib, "DuiLib.lib")
-#   endif
+#	ifdef _UNICODE
+#		pragma comment(lib, "DuiLib_u.lib")
+#	else
+#		pragma comment(lib, "DuiLib.lib")
+#	endif
 #pragma comment(lib, "lib_json.lib")
 #endif
 
@@ -36,7 +36,7 @@ public:
 		m_hMutex = CreateMutex(NULL,FALSE,_T("xiamiweather"));
 
 		if(GetLastError() == ERROR_ALREADY_EXISTS)
-		{ //Èç¹ûÒÑ¾­´æÔÚÍ¬ÃûµÄMutex»áµÃµ½Õâ¸ö´íÎó.
+		{ //å¦‚æœå·²ç»å­˜åœ¨åŒåçš„Mutexä¼šå¾—åˆ°è¿™ä¸ªé”™è¯¯.
 			CloseHandle(m_hMutex);
 			exit(0);
 		}
@@ -49,53 +49,53 @@ public:
 
 	void initWeatherDict()
 	{
-		 m_weatherPicPath["big"] = "skin\\weather\\bigicon\\";
-		 m_weatherPicPath["small"] = "skin\\weather\\icon\\";
-		//m_weatherDict["Çç"] = "1.png";
-		m_weatherDict["Çç°×Ìì"] = "1.png";
-		m_weatherDict["ÇçÍíÉÏ"] = "2.png";
-		//m_weatherDict["Òõ"] = "3.png";
-		m_weatherDict["Òõ°×Ìì"] = "3.png";
-		m_weatherDict["ÒõÍíÉÏ"] = "3.png";
-		//m_weatherDict["¶àÔÆ"] = "5.png";
-		m_weatherDict["¶àÔÆ°×Ìì"] = "5.png";
-		m_weatherDict["¶àÔÆÍíÉÏ"] = "6.png";
-		m_weatherDict["ÕóÓê"] = "10.png";//
-		m_weatherDict["À×ÕóÓê"] = "15.png";
-		m_weatherDict["À×ÕóÓê°éÓĞ±ù±¢"] = "16.png";
-		m_weatherDict["Óê¼ĞÑ©"] = "14.png";
-		m_weatherDict["Ğ¡Óê"] = "8.png";
-		m_weatherDict["ÖĞÓê"] = "9.png";
-		m_weatherDict["´óÓê"] = "10.png";
-		m_weatherDict["±©Óê"] = "11.png";
-		m_weatherDict["´ó±©Óê"] = "12.png";
-		m_weatherDict["ÌØ´ó±©Óê"] = "13.png";
-		m_weatherDict["ÕóÑ©"]= "18.png";//
-		m_weatherDict["Ğ¡Ñ©"] = "17.png";
-		m_weatherDict["ÖĞÑ©"] = "18.png";
-		m_weatherDict["´óÑ©"] = "19.png";
-		m_weatherDict["±©Ñ©"] = "20.png";
-		m_weatherDict["Îí"] = "7.png";//
-		m_weatherDict["¶³Óê"] = "14.png";//
-		m_weatherDict["É³³¾±©"] = "23.png";
-		//m_weatherDict["Ğ¡Óê×ªÖĞÓê"] = "8.png";
-		//m_weatherDict["ÖĞÓê×ª´óÓê"] = "9.png";
-		//m_weatherDict["´óÓê×ª±©Óê"] = "10.png";
-		//m_weatherDict["±©Óê×ª´ó±©Óê"] = "11.png";
-		//m_weatherDict["´ó±©Óê×ªÌØ´ó±©Óê"] = "12.png";
-		//m_weatherDict["Ğ¡Ñ©×ªÖĞÑ©"] = "17.png";
-		//m_weatherDict["ÖĞÑ©×ª´óÑ©"] = "18.png";
-		//m_weatherDict["´óÑ©×ª±©Ñ©"] = "19.png";
-		m_weatherDict["¸¡³¾"] = "21.png";
-		m_weatherDict["ÑïÉ³"] = "22.png";
-		m_weatherDict["Ç¿É³³¾±©"] = "24.png";
-		m_weatherDict["ö²"] = "7.png";//ÕâĞ©¿ÉÒÔ¸ÄÎª´ÓÅäÖÃÎÄ¼şÀï¶Á
+		m_weatherPicPath["big"] = "skin\\weather\\bigicon\\";
+		m_weatherPicPath["small"] = "skin\\weather\\icon\\";
+		//m_weatherDict["æ™´"] = "1.png";
+		m_weatherDict["æ™´ç™½å¤©"] = "1.png";
+		m_weatherDict["æ™´æ™šä¸Š"] = "2.png";
+		//m_weatherDict["é˜´"] = "3.png";
+		m_weatherDict["é˜´ç™½å¤©"] = "3.png";
+		m_weatherDict["é˜´æ™šä¸Š"] = "3.png";
+		//m_weatherDict["å¤šäº‘"] = "5.png";
+		m_weatherDict["å¤šäº‘ç™½å¤©"] = "5.png";
+		m_weatherDict["å¤šäº‘æ™šä¸Š"] = "6.png";
+		m_weatherDict["é˜µé›¨"] = "10.png";//
+		m_weatherDict["é›·é˜µé›¨"] = "15.png";
+		m_weatherDict["é›·é˜µé›¨ä¼´æœ‰å†°é›¹"] = "16.png";
+		m_weatherDict["é›¨å¤¹é›ª"] = "14.png";
+		m_weatherDict["å°é›¨"] = "8.png";
+		m_weatherDict["ä¸­é›¨"] = "9.png";
+		m_weatherDict["å¤§é›¨"] = "10.png";
+		m_weatherDict["æš´é›¨"] = "11.png";
+		m_weatherDict["å¤§æš´é›¨"] = "12.png";
+		m_weatherDict["ç‰¹å¤§æš´é›¨"] = "13.png";
+		m_weatherDict["é˜µé›ª"]= "18.png";//
+		m_weatherDict["å°é›ª"] = "17.png";
+		m_weatherDict["ä¸­é›ª"] = "18.png";
+		m_weatherDict["å¤§é›ª"] = "19.png";
+		m_weatherDict["æš´é›ª"] = "20.png";
+		m_weatherDict["é›¾"] = "7.png";//
+		m_weatherDict["å†»é›¨"] = "14.png";//
+		m_weatherDict["æ²™å°˜æš´"] = "23.png";
+		//m_weatherDict["å°é›¨è½¬ä¸­é›¨"] = "8.png";
+		//m_weatherDict["ä¸­é›¨è½¬å¤§é›¨"] = "9.png";
+		//m_weatherDict["å¤§é›¨è½¬æš´é›¨"] = "10.png";
+		//m_weatherDict["æš´é›¨è½¬å¤§æš´é›¨"] = "11.png";
+		//m_weatherDict["å¤§æš´é›¨è½¬ç‰¹å¤§æš´é›¨"] = "12.png";
+		//m_weatherDict["å°é›ªè½¬ä¸­é›ª"] = "17.png";
+		//m_weatherDict["ä¸­é›ªè½¬å¤§é›ª"] = "18.png";
+		//m_weatherDict["å¤§é›ªè½¬æš´é›ª"] = "19.png";
+		m_weatherDict["æµ®å°˜"] = "21.png";
+		m_weatherDict["æ‰¬æ²™"] = "22.png";
+		m_weatherDict["å¼ºæ²™å°˜æš´"] = "24.png";
+		m_weatherDict["éœ¾"] = "7.png";//è¿™äº›å¯ä»¥æ”¹ä¸ºä»é…ç½®æ–‡ä»¶é‡Œè¯»
 		
 	}
 	
-    virtual LPCTSTR    GetWindowClassName() const   {   return _T("XiamiWeatherFrame");  }
-    virtual CDuiString GetSkinFile()                {   return _T("ui.xml");  }
-    virtual CDuiString GetSkinFolder()              {   return _T("");  }
+	virtual LPCTSTR	GetWindowClassName() const	{	return _T("XiamiWeatherFrame");  }
+	virtual CDuiString GetSkinFile()				{	return _T("ui.xml");  }
+	virtual CDuiString GetSkinFolder()			  {	return _T("");  }
 
 	void UpdateWeather(Json::Value weatherinfo)
 	{
@@ -114,7 +114,7 @@ public:
 	}
 
 	void SetCity(const char* citytext)
-	{   
+	{	
 		CControlUI* cityctrl = m_PaintManager.FindControl(_T("City"));
 		if(cityctrl)
 		{
@@ -166,32 +166,32 @@ public:
 			sscanf(text, "%d", &pm);
 			if(pm < 51)
 			{
-				pmtext += "ÓÅ";
+				pmtext += "ä¼˜";
 				tempctrl->SetBkColor(0xFF348E25);
 			}
 			else if(pm < 101)
 			{
-				pmtext += "Á¼";
+				pmtext += "è‰¯";
 				tempctrl->SetBkColor(0xFFAFDB00);
 			}
 			else if(pm < 151)
 			{
-				pmtext += "Çá¶ÈÎÛÈ¾";
+				pmtext += "è½»åº¦æ±¡æŸ“";
 				tempctrl->SetBkColor(0xFFFFA07A);
 			}
 			else if(pm < 201)
 			{
-				pmtext += "ÖĞ¶ÈÎÛÈ¾";
+				pmtext += "ä¸­åº¦æ±¡æŸ“";
 				tempctrl->SetBkColor(0xFFAF1010);
 			}
 			else if(pm < 301)
 			{
-				pmtext += "ÖØ¶ÈÎÛÈ¾";
+				pmtext += "é‡åº¦æ±¡æŸ“";
 				tempctrl->SetBkColor(0xFFEE00EE);
 			}
 			else
 			{
-				pmtext += "ÑÏÖØÎÛÈ¾";
+				pmtext += "ä¸¥é‡æ±¡æŸ“";
 				tempctrl->SetBkColor(0xFF8B1A1A);
 			}
 
@@ -204,31 +204,31 @@ public:
 	{
 		string weather = weathertext;
 		string picpath = m_weatherDict.get(weather, "").asString();
-		if ( "" == picpath)//²»ÄÜÕÒµ½
+		if ( "" == picpath)//ä¸èƒ½æ‰¾åˆ°
 		{
-			//ÏÈÊÔÏÂÄÜ²»ÄÜ²»ÇĞ³ö×ª×ÖÀ´£¬ÄÜÕÒµ½µÄ×ª×ÖÒÑ¾­¿ÉÒÔÖ±½ÓÉèÁË
-			weather = (char*)wcstok((wchar_t*)weather.c_str(), (const wchar_t*)"×ª");
+			//å…ˆè¯•ä¸‹èƒ½ä¸èƒ½ä¸åˆ‡å‡ºè½¬å­—æ¥ï¼Œèƒ½æ‰¾åˆ°çš„è½¬å­—å·²ç»å¯ä»¥ç›´æ¥è®¾äº†
+			weather = (char*)wcstok((wchar_t*)weather.c_str(), (const wchar_t*)"è½¬");
 			picpath = m_weatherDict.get(weather, "").asString();
 			if ( "" == picpath)
 			{
-				//»¹ÊÇÕÒ²»µ½ÄÇ¾Í¼ÓÉÏÊ±¼ä
+				//è¿˜æ˜¯æ‰¾ä¸åˆ°é‚£å°±åŠ ä¸Šæ—¶é—´
 				SYSTEMTIME sys; 
 				GetLocalTime(&sys);
 				if(sys.wHour > 18 || sys.wHour < 7)
-					weather += "ÍíÉÏ";
+					weather += "æ™šä¸Š";
 				else if(sys.wHour > 6)
-					weather += "°×Ìì";
+					weather += "ç™½å¤©";
 				picpath = m_weatherDict.get(weather, "").asString();
 			}
 		}
-		else//ÄÜÕÒµ½ÄÇÒ²¼ÓÉÏÏÂÊ±¼ä¿´ÏÂ
+		else//èƒ½æ‰¾åˆ°é‚£ä¹ŸåŠ ä¸Šä¸‹æ—¶é—´çœ‹ä¸‹
 		{		
 				SYSTEMTIME sys; 
 				GetLocalTime(&sys);
 				if(sys.wHour > 18 || sys.wHour < 7 )
-					weather += "ÍíÉÏ";
+					weather += "æ™šä¸Š";
 				else if(sys.wHour > 6)
-					weather += "°×Ìì";
+					weather += "ç™½å¤©";
 				picpath = m_weatherDict.get(weather, "").asString();
 				if ( "" == picpath)
 				{
@@ -241,7 +241,7 @@ public:
 			pictype = "small";
 		}
 		picpath = m_weatherPicPath.get(pictype, "").asString() + picpath;
-		//cout << "picpath£º" << picpath << endl;
+		//cout << "picpathï¼š" << picpath << endl;
 
 		return picpath;
 	}
@@ -317,29 +317,29 @@ public:
 		}
 	}
 
-	LRESULT HandleMessage(UINT uMsg,WPARAM wParam,LPARAM lParam)// ÆÁ±ÎË«»÷±êÌâÀ¸×î´ó»¯
-    {
+	LRESULT HandleMessage(UINT uMsg,WPARAM wParam,LPARAM lParam)// å±è”½åŒå‡»æ ‡é¢˜æ æœ€å¤§åŒ–
+	{
 		if(WM_NCLBUTTONDBLCLK != uMsg &&  WM_SIZE !=uMsg)
 		{
 			return WindowImplBase::HandleMessage(uMsg,wParam,lParam);
 		}
-      
-   return 0;
+	  
+	return 0;
 }
 };
 
 /**
- * Ò»µ©curl½ÓÊÕµ½Êı¾İ£¬¾Í»áµ÷ÓÃ´Ë»Øµ÷º¯Êı
- * buffer:Êı¾İ»º³åÇøÖ¸Õë
- * size:µ÷ÊÔ½×¶Î×ÜÊÇ·¢ÏÖÎª1
- * nmemb:(memory block)´ú±í´Ë´Î½ÓÊÜµÄÄÚ´æ¿éµÄ³¤¶È
- * writerData:ÓÃ»§×Ô¶¨ÒåµÄÒ»¸ö²ÎÊı
+ * ä¸€æ—¦curlæ¥æ”¶åˆ°æ•°æ®ï¼Œå°±ä¼šè°ƒç”¨æ­¤å›è°ƒå‡½æ•°
+ * buffer:æ•°æ®ç¼“å†²åŒºæŒ‡é’ˆ
+ * size:è°ƒè¯•é˜¶æ®µæ€»æ˜¯å‘ç°ä¸º1
+ * nmemb:(memory block)ä»£è¡¨æ­¤æ¬¡æ¥å—çš„å†…å­˜å—çš„é•¿åº¦
+ * writerData:ç”¨æˆ·è‡ªå®šä¹‰çš„ä¸€ä¸ªå‚æ•°
  */
 size_t write_data(char* data, size_t size, size_t nmemb, string* writerData)
 {
-    if (writerData == NULL)
+	if (writerData == NULL)
 	{
-        return 0;
+		return 0;
 	}
 	int len = size*nmemb;
 	writerData->append(data, len);
@@ -348,60 +348,60 @@ size_t write_data(char* data, size_t size, size_t nmemb, string* writerData)
 
 string UrlRequestData(string urlstr)
 {
-	curl_global_init(CURL_GLOBAL_ALL); // Ê×ÏÈÈ«¾Ö³õÊ¼»¯CURL
-    CURL* curl = curl_easy_init(); // ³õÊ¼»¯CURL¾ä±ú
+	curl_global_init(CURL_GLOBAL_ALL); // é¦–å…ˆå…¨å±€åˆå§‹åŒ–CURL
+	CURL* curl = curl_easy_init(); // åˆå§‹åŒ–CURLå¥æŸ„
 
-    if (NULL == curl)
-    {
-		::MessageBox(NULL, "Çë²é¿´ÍøÂçÊÇ·ñ¾ÍĞ÷","NULL",1);
-        return "";
-    }
-	struct curl_slist *chunk = NULL;  
-    if (curl)  
-    {  
-        cout << curl_version() << endl;  
-        chunk = curl_slist_append(chunk, "Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");  
-        chunk = curl_slist_append(chunk, "Accept-Charset:GBK,utf-8;q=0.7,*;q=0.3");  
-        chunk = curl_slist_append(chunk, "Accept-Language:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4,zh-CN;q=0.2");  
-        //chunk = curl_slist_append(chunk, "Connection:keep-alive");    
-        chunk = curl_slist_append(chunk, "Accept-Encoding:gunzip,defate");  
-        chunk = curl_slist_append(chunk, "User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31");  
-        chunk = curl_slist_append(chunk, "Expect:");
+	if (NULL == curl)
+	{
+		::MessageBox(NULL, "è¯·æŸ¥çœ‹ç½‘ç»œæ˜¯å¦å°±ç»ª","NULL",1);
+		return "";
 	}
-    string buffer;
-    // ÉèÖÃÄ¿±êURL
+	struct curl_slist *chunk = NULL;  
+	if (curl)  
+	{  
+		cout << curl_version() << endl;  
+		chunk = curl_slist_append(chunk, "Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");  
+		chunk = curl_slist_append(chunk, "Accept-Charset:GBK,utf-8;q=0.7,*;q=0.3");  
+		chunk = curl_slist_append(chunk, "Accept-Language:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4,zh-CN;q=0.2");  
+		//chunk = curl_slist_append(chunk, "Connection:keep-alive");
+		chunk = curl_slist_append(chunk, "Accept-Encoding:gunzip,defate");  
+		chunk = curl_slist_append(chunk, "User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31");  
+		chunk = curl_slist_append(chunk, "Expect:");
+	}
+	string buffer;
+	// è®¾ç½®ç›®æ ‡URL
 	
 
 	curl_easy_setopt(curl, CURLOPT_URL, urlstr.c_str());
-    //curl_easy_setopt(curl, CURLOPT_URL, "http://api.map.baidu.com/telematics/v3/weather?location=%E5%8C%97%E4%BA%AC&output=json&ak=EAdbf1bd711caf257fb60f507f9b8e4c");
-    // ÉèÖÃ½ÓÊÕµ½HTTP·şÎñÆ÷µÄÊı¾İÊ±µ÷ÓÃµÄ»Øµ÷º¯Êı
-    curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
-    // ÉèÖÃ×Ô¶¨Òå²ÎÊı(»Øµ÷º¯ÊıµÄµÚËÄ¸ö²ÎÊı)
-    curl_easy_setopt(curl, CURLOPT_WRITEDATA, &buffer);
-	// ÉèÖÃheader
-    curl_easy_setopt(curl, CURLOPT_HTTPHEADER, chunk);
+	//curl_easy_setopt(curl, CURLOPT_URL, "http://api.map.baidu.com/telematics/v3/weather?location=%E5%8C%97%E4%BA%AC&output=json&ak=EAdbf1bd711caf257fb60f507f9b8e4c");
+	// è®¾ç½®æ¥æ”¶åˆ°HTTPæœåŠ¡å™¨çš„æ•°æ®æ—¶è°ƒç”¨çš„å›è°ƒå‡½æ•°
+	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
+	// è®¾ç½®è‡ªå®šä¹‰å‚æ•°(å›è°ƒå‡½æ•°çš„ç¬¬å››ä¸ªå‚æ•°)
+	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &buffer);
+	// è®¾ç½®header
+	curl_easy_setopt(curl, CURLOPT_HTTPHEADER, chunk);
 	//curl_easy_setopt(curl,CURLOPT_USERAGENT,_T("Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; SV1; .NET CLR 1.1.4322)Accept-Encoding: gzip")); 
-    // Ö´ĞĞÒ»´ÎURLÇëÇó
-    CURLcode res = curl_easy_perform(curl);
-    // ÇåÀí¸É¾»
-    curl_easy_cleanup(curl);
+	// æ‰§è¡Œä¸€æ¬¡URLè¯·æ±‚
+	CURLcode res = curl_easy_perform(curl);
+	// æ¸…ç†å¹²å‡€
+	curl_easy_cleanup(curl);
 	//Sleep(1000);
 
 	if (buffer.empty())
-    {
-		//::MessageBox(NULL, "ÍøÂçÁ¬½ÓÊ§°Ü","ÌáÊ¾",1);
-		cout << "ÍøÂçÁ¬½ÓÊ§°Ü" << endl;
+	{
+		//::MessageBox(NULL, "ç½‘ç»œè¿æ¥å¤±è´¥","æç¤º",1);
+		cout << "ç½‘ç»œè¿æ¥å¤±è´¥" << endl;
 		return "";
 	}
 	
 	int len=MultiByteToWideChar(CP_UTF8, 0, (LPCSTR)buffer.c_str(), -1, NULL,0); 
-	unsigned short* wszGBK = new unsigned short[len+1];       
+	unsigned short* wszGBK = new unsigned short[len+1];		
 	memset(wszGBK, 0, len * 2 + 2); 
 	MultiByteToWideChar(CP_UTF8, 0, (LPCSTR)buffer.c_str(), -1, (LPWSTR)wszGBK, len); 
 	len = WideCharToMultiByte(CP_ACP, 0, (LPCWSTR)wszGBK, -1, NULL, 0, NULL, NULL); 
 	char *szGBK=new char[len + 1]; 
 	memset(szGBK, 0, len + 1); 
-	WideCharToMultiByte (CP_ACP, 0, (LPCWSTR)wszGBK, -1, (LPSTR)szGBK, len, NULL,NULL); 				
+	WideCharToMultiByte (CP_ACP, 0, (LPCWSTR)wszGBK, -1, (LPSTR)szGBK, len, NULL,NULL); 
 	buffer = szGBK;
 	
 	//std::cout << buffer << std::endl;
@@ -409,7 +409,7 @@ string UrlRequestData(string urlstr)
 }
 
 
-void WriteDataToFile(char* filepath, const char* buffer)//¿ÉÒÔÔÚÕâÀï¼ÓÒ»²ã¼ÓÃÜ
+void WriteDataToFile(char* filepath, const char* buffer)//å¯ä»¥åœ¨è¿™é‡ŒåŠ ä¸€å±‚åŠ å¯†
 {
 	HANDLE hFile;
 	DWORD nBytes;
@@ -427,11 +427,11 @@ string ReadDataFromFile(char* filename)
 	HANDLE pfile;
 	static string bufferstr = "";
 
-	pfile = ::CreateFile(filename,GENERIC_READ,0,NULL,OPEN_EXISTING,FILE_ATTRIBUTE_NORMAL,NULL);//ÓÃÕâ¸öº¯Êı±ÈOpenFileºÃ
+	pfile = ::CreateFile(filename,GENERIC_READ,0,NULL,OPEN_EXISTING,FILE_ATTRIBUTE_NORMAL,NULL);//ç”¨è¿™ä¸ªå‡½æ•°æ¯”OpenFileå¥½
 	if(pfile == INVALID_HANDLE_VALUE)
 	{
-		MessageBox(NULL,"´ò¿ªÅäÖÃÎÄ¼şÊ§°Ü","ÌáÊ¾",MB_OK);
-		CloseHandle(pfile);//Ò»¶¨×¢ÒâÔÚº¯ÊıÍË³öÖ®Ç°¶Ô¾ä±ú½øĞĞÊÍ·Å¡£
+		MessageBox(NULL,"æ‰“å¼€é…ç½®æ–‡ä»¶å¤±è´¥","æç¤º",MB_OK);
+		CloseHandle(pfile);//ä¸€å®šæ³¨æ„åœ¨å‡½æ•°é€€å‡ºä¹‹å‰å¯¹å¥æŸ„è¿›è¡Œé‡Šæ”¾ã€‚
 		exit(0);
 		//return bufferstr;
 	}
@@ -447,7 +447,7 @@ string ReadDataFromFile(char* filename)
 	//std::cout << bufferstr << std::endl;
 	return bufferstr;
 }
-string GetCityInfoByIP_Sina()//ĞÂÀË½Ó¿Ú
+string GetCityInfoByIP_Sina()//æ–°æµªæ¥å£
 {
 	string retstr = "";
 	string buffer = UrlRequestData("http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js");
@@ -455,23 +455,23 @@ string GetCityInfoByIP_Sina()//ĞÂÀË½Ó¿Ú
 	{
 		buffer = ReadDataFromFile(_T("cityinfo-sina.json"));
 		if(buffer == "")
-			MessageBox(NULL,"´ò¿ªÅäÖÃÎÄ¼şÊ§°Ü","ÌáÊ¾",MB_OK);
+			MessageBox(NULL,"æ‰“å¼€é…ç½®æ–‡ä»¶å¤±è´¥","æç¤º",MB_OK);
 			return retstr;
 	}
 
-    static Json::Value root;
-    Json::Reader reader;
+	static Json::Value root;
+	Json::Reader reader;
 	bool parsingSuccessful = reader.parse(buffer.replace(0,strlen("var remote_ip_info = "),1,' '), root);
-    if(!parsingSuccessful)
-    {
-		::MessageBox(NULL, "Êı¾İ½âÎö³ö´í","ÌáÊ¾",1);
+	if(!parsingSuccessful)
+	{
+		::MessageBox(NULL, "æ•°æ®è§£æå‡ºé”™","æç¤º",1);
 		return retstr;
 	}
 
 	static const Json::Value status = root["ret"];
 	if (1 != status.asInt())
 	{
-		::MessageBox(NULL, "·µ»Ø³ö´í","ÌáÊ¾",1);
+		::MessageBox(NULL, "è¿”å›å‡ºé”™","æç¤º",1);
 		return retstr;
 	}
 
@@ -479,7 +479,7 @@ string GetCityInfoByIP_Sina()//ĞÂÀË½Ó¿Ú
 	return root["city"].asString();
 }
 
-string GetCityInfoByIP()//°Ù¶È½Ó¿Ú
+string GetCityInfoByIP()//ç™¾åº¦æ¥å£
 {
 	string retstr = "";
 	string buffer = UrlRequestData("http://api.map.baidu.com/location/ip?ak=EAdbf1bd711caf257fb60f507f9b8e4c");
@@ -490,19 +490,19 @@ string GetCityInfoByIP()//°Ù¶È½Ó¿Ú
 			return retstr;
 	}
 
-    static Json::Value root;
-    Json::Reader reader;
-    bool parsingSuccessful = reader.parse(buffer, root);
-    if(!parsingSuccessful)
-    {
-		::MessageBox(NULL, "Êı¾İ½âÎö³ö´í","ÌáÊ¾",1);
+	static Json::Value root;
+	Json::Reader reader;
+	bool parsingSuccessful = reader.parse(buffer, root);
+	if(!parsingSuccessful)
+	{
+		::MessageBox(NULL, "æ•°æ®è§£æå‡ºé”™","æç¤º",1);
 		return retstr;
 	}
 
 	static const Json::Value status = root["status"];
 	if (0 != status.asInt())
 	{
-		::MessageBox(NULL, "APP SNĞ£Ñé³ö´í","ÌáÊ¾",1);
+		::MessageBox(NULL, "APP SNæ ¡éªŒå‡ºé”™","æç¤º",1);
 		return retstr;
 	}
 
@@ -512,7 +512,7 @@ string GetCityInfoByIP()//°Ù¶È½Ó¿Ú
 
 Json::Value GetWeatherInfoByCity(const char * citystr)
 {
-    strCoding sC;
+	strCoding sC;
 	string urlstr = "http://api.map.baidu.com/telematics/v3/weather?output=json&ak=EAdbf1bd711caf257fb60f507f9b8e4c&location=";
 	string urlcitystr = sC.UrlUTF8((char*)citystr);
 	urlstr += urlcitystr;
@@ -527,19 +527,19 @@ Json::Value GetWeatherInfoByCity(const char * citystr)
 		if(buffer == "")
 			return NULL;
 	}
-    static Json::Value root;
-    Json::Reader reader;
-    bool parsingSuccessful = reader.parse(buffer, root);
-    if(!parsingSuccessful)
-    {
-		::MessageBox(NULL, "Êı¾İ½âÎö³ö´í","ÌáÊ¾",1);
+	static Json::Value root;
+	Json::Reader reader;
+	bool parsingSuccessful = reader.parse(buffer, root);
+	if(!parsingSuccessful)
+	{
+		::MessageBox(NULL, "æ•°æ®è§£æå‡ºé”™","æç¤º",1);
 		return NULL;
 	}
 
 	static const Json::Value status = root["status"];
 	if (true == status.isInt())
 	{
-		::MessageBox(NULL, "APP SNĞ£Ñé³ö´í","ÌáÊ¾",1);
+		::MessageBox(NULL, "APP SNæ ¡éªŒå‡ºé”™","æç¤º",1);
 		return NULL;
 	}
 
@@ -553,36 +553,36 @@ Json::Value GetWeatherInfoByCity(const char * citystr)
 		bool parsingSuccessful = reader.parse(buffer, root);
 		if(!parsingSuccessful)
 		{
-			::MessageBox(NULL, "Êı¾İ½âÎö³ö´í","ÌáÊ¾",1);
+			::MessageBox(NULL, "æ•°æ®è§£æå‡ºé”™","æç¤º",1);
 			return NULL;
 		}
 
 		static const Json::Value status = root["status"];
 		if (true == status.isInt())
 		{
-			::MessageBox(NULL, "APP SNĞ£Ñé³ö´í","ÌáÊ¾",1);
+			::MessageBox(NULL, "APP SNæ ¡éªŒå‡ºé”™","æç¤º",1);
 			return NULL;
 		}
 	}
 	
 	WriteDataToFile(_T("weatherinfo.json"), buffer.c_str());
 
-    return root;
+	return root;
 }
 
 int APIENTRY _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLine, int nCmdShow)
 {
 	#ifdef _DEBUG
 		AllocConsole();
-		freopen( "CONOUT$", "w+t", stdout );// ÉêÇëĞ´
-		freopen( "CONIN$", "r+t", stdin );// ÉêÇë¶Á
+		freopen( "CONOUT$", "w+t", stdout );// ç”³è¯·å†™
+		freopen( "CONIN$", "r+t", stdin );// ç”³è¯·è¯»
 	#else	
 		CPaintManagerUI::SetResourceZip(_T("skin.zip"));
 		CPaintManagerUI::ReloadSkin();
 	#endif
 
 	cout << "By: whitefirer@gmail.com" << endl;
-	//static const Json::Value weatherinfo = GetWeatherInfoByCity("¹ãÖİ");
+	//static const Json::Value weatherinfo = GetWeatherInfoByCity("å¹¿å·");
 	string city = GetCityInfoByIP_Sina();
 	if(city == "")
 	{
@@ -595,15 +595,15 @@ int APIENTRY _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCm
 	}
 	cout << weatherinfo.toStyledString() << endl;
 
-    CPaintManagerUI::SetInstance(hInstance);
+	CPaintManagerUI::SetInstance(hInstance);
 
-    CWeatherFrameWnd WeatherFrame;
+	CWeatherFrameWnd WeatherFrame;
 	WeatherFrame.initWeatherDict();
-	WeatherFrame.Create(NULL, _T("ÏºÃ×ÌìÆø"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
-    //duiFrame.CenterWindow();
+	WeatherFrame.Create(NULL, _T("è™¾ç±³å¤©æ°”"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
+	//duiFrame.CenterWindow();
 	WeatherFrame.SetPosAtCornerWindow(2, 2, 2);
 	WeatherFrame.UpdateWeather(weatherinfo);
-    WeatherFrame.ShowModal();
+	WeatherFrame.ShowModal();
 	
-    return 0;
+	return 0;
 }
