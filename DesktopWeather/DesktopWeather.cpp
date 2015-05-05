@@ -94,8 +94,8 @@ public:
 	}
 	
 	virtual LPCTSTR	GetWindowClassName() const	{	return _T("XiamiWeatherFrame");  }
-	virtual CDuiString GetSkinFile()				{	return _T("ui.xml");  }
-	virtual CDuiString GetSkinFolder()			  {	return _T("");  }
+	virtual CDuiString GetSkinFile()		{	return _T("ui.xml");  }
+	virtual CDuiString GetSkinFolder()		{	return _T("");  }
 
 	void UpdateWeather(Json::Value weatherinfo)
 	{
