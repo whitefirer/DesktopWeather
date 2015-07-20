@@ -61,8 +61,8 @@ public:
 		m_weatherDict["多云白天"] = "5.png";
 		m_weatherDict["多云晚上"] = "6.png";
 		m_weatherDict["阵雨"] = "8.png";
-		m_weatherDict["雷阵雨"] = "15.png";
-		m_weatherDict["雷阵雨伴有冰雹"] = "16.png";
+		m_weatherDict["雷阵雨"] = "30.png";
+		m_weatherDict["雷阵雨伴有冰雹"] = "31.png";
 		m_weatherDict["雨夹雪"] = "14.png";
 		m_weatherDict["小雨"] = "8.png";
 		m_weatherDict["中雨"] = "9.png";
