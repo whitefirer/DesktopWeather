@@ -381,7 +381,7 @@ string UrlRequestData(string urlstr)
 	
 
 	curl_easy_setopt(curl, CURLOPT_URL, urlstr.c_str());
-	//curl_easy_setopt(curl, CURLOPT_URL, "http://api.map.baidu.com/telematics/v3/weather?location=%E5%8C%97%E4%BA%AC&output=json&ak=EAdbf1bd711caf257fb60f507f9b8e4c");
+	//curl_easy_setopt(curl, CURLOPT_URL, "http://api.map.baidu.com/telematics/v3/weather?location=%E5%8C%97%E4%BA%AC&output=json&ak=<application-key>");
 	// 设置接收到HTTP服务器的数据时调用的回调函数
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
 	// 设置自定义参数(回调函数的第四个参数)
@@ -490,7 +490,7 @@ string GetCityInfoByIP_Sina()//新浪接口
 string GetCityInfoByIP()//百度接口
 {
 	string retstr = "";
-	string buffer = UrlRequestData("http://api.map.baidu.com/location/ip?ak=EAdbf1bd711caf257fb60f507f9b8e4c");
+	string buffer = UrlRequestData("http://api.map.baidu.com/location/ip?ak=<application-key>");
 	if (buffer == "")
 	{
 		buffer = ReadDataFromFile(_T("cityinfo.json"));
@@ -521,7 +521,7 @@ string GetCityInfoByIP()//百度接口
 Json::Value GetWeatherInfoByCity(const char * citystr)
 {
 	strCoding sC;
-	string urlstr = "http://api.map.baidu.com/telematics/v3/weather?output=json&ak=EAdbf1bd711caf257fb60f507f9b8e4c&location=";
+	string urlstr = "http://api.map.baidu.com/telematics/v3/weather?output=json&ak=<application-key>&location=";
 	string urlcitystr = sC.UrlUTF8((char*)citystr);
 	urlstr += urlcitystr;
 
